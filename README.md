@@ -73,3 +73,5 @@ This extension stores all data locally on your computer. No data is sent to any 
 ## License
 
 This project is released under the MIT License. 
+
+## Output
