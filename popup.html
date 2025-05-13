@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Productivity Tracker</h1>
+    </header>
+    
+    <section class="today-stats">
+      <h2>Today's Overview</h2>
+      <div class="stat-container">
+        <div class="stat-card productive">
+          <div class="stat-value" id="productive-time">0h 0m</div>
+          <div class="stat-label">Productive</div>
+        </div>
+        <div class="stat-card unproductive">
+          <div class="stat-value" id="unproductive-time">0h 0m</div>
+          <div class="stat-label">Unproductive</div>
+        </div>
+        <div class="stat-card neutral">
+          <div class="stat-value" id="neutral-time">0h 0m</div>
+          <div class="stat-label">Neutral</div>
+        </div>
+      </div>
+      <div class="productivity-score">
+        <span>Productivity Score</span>
+        <div class="score" id="productivity-score">0%</div>
+      </div>
+    </section>
+    
+    <section class="chart-container">
+      <h2>Time Distribution</h2>
+      <canvas id="time-chart"></canvas>
+    </section>
+    
+    <section class="top-sites">
+      <h2>Top Sites Today</h2>
+      <div id="top-sites-list" class="sites-list">
+        <!-- Sites will be inserted here by JavaScript -->
+      </div>
+    </section>
+    
+    <nav class="main-nav">
+      <button id="btn-dashboard" class="nav-btn">Dashboard</button>
+      <button id="btn-settings" class="nav-btn">Settings</button>
+      <button id="btn-reports" class="nav-btn">Reports</button>
+    </nav>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 

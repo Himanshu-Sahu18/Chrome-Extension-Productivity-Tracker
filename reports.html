@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker - Reports</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reports.css">
+  <script src="chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weekly Productivity Reports</h1>
+      <div class="week-selector">
+        <button id="prev-week" class="nav-btn">&lt;</button>
+        <span id="week-display">Week of June 1, 2023</span>
+        <button id="next-week" class="nav-btn">&gt;</button>
+      </div>
+    </header>
+    
+    <section class="report-card summary-card">
+      <h2>Weekly Summary</h2>
+      <div class="summary-stats">
+        <div class="stat-card">
+          <div class="stat-label">Productivity Score</div>
+          <div class="stat-value" id="productivity-score">0%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Productive Time</div>
+          <div class="stat-value" id="productive-time">0h 0m</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Unproductive Time</div>
+          <div class="stat-value" id="unproductive-time">0h 0m</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Most Productive Day</div>
+          <div class="stat-value" id="most-productive-day">-</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="report-card daily-breakdown-card">
+      <h2>Daily Breakdown</h2>
+      <canvas id="daily-chart"></canvas>
+    </section>
+    
+    <section class="report-card category-usage-card">
+      <h2>Website Category Usage</h2>
+      <div class="category-container">
+        <div class="chart-container">
+          <canvas id="category-chart"></canvas>
+        </div>
+        <div class="category-details">
+          <h3>Top Sites</h3>
+          <div id="top-sites-list" class="top-sites">
+            <!-- Sites will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="report-card time-distribution-card">
+      <h2>Time Distribution by Hour</h2>
+      <canvas id="hourly-chart"></canvas>
+    </section>
+    
+    <section class="report-card insights-card">
+      <h2>Insights</h2>
+      <div id="insights-container">
+        <!-- Insights will be populated by JavaScript -->
+      </div>
+    </section>
+    
+    <div class="report-actions">
+      <button id="export-report-btn" class="action-btn">Export Report</button>
+      <button id="print-report-btn" class="action-btn">Print Report</button>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="popup.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+  </div>
+  
+  <script src="reports.js"></script>
+</body>
+</html> 

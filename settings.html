@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker - Settings</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Settings</h1>
+    </header>
+    
+    <section class="settings-section">
+      <h2>Website Categories</h2>
+      <p class="section-description">Customize which websites are considered productive or unproductive.</p>
+      
+      <div class="categories-container">
+        <div class="category-box">
+          <h3>Productive Websites</h3>
+          <div class="category-list" id="productive-list">
+            <!-- List will be populated by JavaScript -->
+          </div>
+          <div class="add-site">
+            <input type="text" id="add-productive-input" placeholder="domain.com">
+            <button id="add-productive-btn">Add</button>
+          </div>
+        </div>
+        
+        <div class="category-box">
+          <h3>Unproductive Websites</h3>
+          <div class="category-list" id="unproductive-list">
+            <!-- List will be populated by JavaScript -->
+          </div>
+          <div class="add-site">
+            <input type="text" id="add-unproductive-input" placeholder="domain.com">
+            <button id="add-unproductive-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="settings-section">
+      <h2>Notifications</h2>
+      <div class="setting-item">
+        <div class="setting-info">
+          <h3>Daily Summary</h3>
+          <p>Receive a daily summary of your productivity</p>
+        </div>
+        <div class="setting-control">
+          <label class="switch">
+            <input type="checkbox" id="daily-summary-toggle" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-item">
+        <div class="setting-info">
+          <h3>Unproductive Site Alerts</h3>
+          <p>Get notified when spending too much time on unproductive sites</p>
+        </div>
+        <div class="setting-control">
+          <label class="switch">
+            <input type="checkbox" id="unproductive-alert-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-item sub-setting" id="time-threshold-setting">
+        <div class="setting-info">
+          <h3>Time Threshold</h3>
+          <p>Minutes spent on unproductive sites before alert</p>
+        </div>
+        <div class="setting-control">
+          <select id="time-threshold">
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
+            <option value="15" selected>15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">1 hour</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    
+    <section class="settings-section">
+      <h2>Goals</h2>
+      <div class="setting-item">
+        <div class="setting-info">
+          <h3>Productivity Target</h3>
+          <p>Set your daily productivity score target</p>
+        </div>
+        <div class="setting-control">
+          <div class="range-container">
+            <input type="range" min="0" max="100" value="70" id="productivity-target">
+            <span class="range-value" id="target-value">70%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="settings-section danger-zone">
+      <h2>Data Management</h2>
+      <div class="setting-item">
+        <div class="setting-info">
+          <h3>Export Data</h3>
+          <p>Download your tracking data as JSON</p>
+        </div>
+        <div class="setting-control">
+          <button id="export-data-btn" class="action-btn">Export</button>
+        </div>
+      </div>
+      
+      <div class="setting-item">
+        <div class="setting-info">
+          <h3>Clear Data</h3>
+          <p>Delete all your tracking data</p>
+        </div>
+        <div class="setting-control">
+          <button id="clear-data-btn" class="action-btn danger">Clear</button>
+        </div>
+      </div>
+    </section>
+    
+    <div class="actions">
+      <button id="save-settings-btn" class="primary-btn">Save Settings</button>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="popup.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="reports.html" class="nav-link">Reports</a>
+    </nav>
+  </div>
+  
+  <div class="modal" id="confirm-modal">
+    <div class="modal-content">
+      <h2>Are you sure?</h2>
+      <p>This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button id="cancel-btn" class="action-btn">Cancel</button>
+        <button id="confirm-btn" class="action-btn danger">Confirm</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="settings.js"></script>
+</body>
+</html> 

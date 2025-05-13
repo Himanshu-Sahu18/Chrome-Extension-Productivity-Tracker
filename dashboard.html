@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker - Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Productivity Dashboard</h1>
+      <div class="date-range">
+        <button id="today" class="date-btn active">Today</button>
+        <button id="week" class="date-btn">Week</button>
+        <button id="month" class="date-btn">Month</button>
+        <button id="custom" class="date-btn">Custom</button>
+      </div>
+    </header>
+    
+    <div class="dashboard-grid">
+      <section class="overview-card">
+        <h2>Overview</h2>
+        <div class="stats-grid">
+          <div class="stat-card productive">
+            <div class="stat-label">Productive Time</div>
+            <div class="stat-value" id="productive-time">0h 0m</div>
+            <div class="stat-percentage" id="productive-percentage">0%</div>
+          </div>
+          <div class="stat-card unproductive">
+            <div class="stat-label">Unproductive Time</div>
+            <div class="stat-value" id="unproductive-time">0h 0m</div>
+            <div class="stat-percentage" id="unproductive-percentage">0%</div>
+          </div>
+          <div class="stat-card neutral">
+            <div class="stat-label">Neutral Time</div>
+            <div class="stat-value" id="neutral-time">0h 0m</div>
+            <div class="stat-percentage" id="neutral-percentage">0%</div>
+          </div>
+          <div class="stat-card total">
+            <div class="stat-label">Total Time</div>
+            <div class="stat-value" id="total-time">0h 0m</div>
+            <div class="stat-percentage">100%</div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="productivity-score-card">
+        <h2>Productivity Score</h2>
+        <div class="score-container">
+          <div class="score-circle">
+            <div class="score-value" id="productivity-score">0%</div>
+          </div>
+          <div class="score-target">
+            <div class="target-label">Target: 70%</div>
+            <div class="target-diff" id="target-diff">-70%</div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="time-chart-card">
+        <h2>Time Distribution</h2>
+        <canvas id="time-chart"></canvas>
+      </section>
+      
+      <section class="trend-chart-card">
+        <h2>Productivity Trend</h2>
+        <canvas id="trend-chart"></canvas>
+      </section>
+      
+      <section class="top-sites-card">
+        <h2>Top Sites</h2>
+        <div id="top-sites-list" class="sites-list">
+          <!-- Sites will be inserted here by JavaScript -->
+        </div>
+      </section>
+      
+      <section class="category-breakdown-card">
+        <h2>Category Breakdown</h2>
+        <div class="category-list" id="category-list">
+          <!-- Categories will be inserted here by JavaScript -->
+        </div>
+      </section>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="popup.html" class="nav-link">Home</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+      <a href="reports.html" class="nav-link">Reports</a>
+    </nav>
+  </div>
+  
+  <script src="dashboard.js"></script>
+</body>
+</html> 
