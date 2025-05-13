@@ -75,3 +75,12 @@ This extension stores all data locally on your computer. No data is sent to any 
 This project is released under the MIT License. 
 
 ## Output
+https://github.com/user-attachments/assets/8834978d-af9f-4988-832c-deb436830b0c
+
+![Image](https://github.com/user-attachments/assets/b0ae456b-54ab-41f8-9287-caae0bfa7882)
+![Image](https://github.com/user-attachments/assets/2b61869a-0cc0-472a-a70c-943eddf8ab4f)
+![Image](https://github.com/user-attachments/assets/dbb2f1f7-07a5-4dcd-8ebb-c04cfb81c356)
+![Image](https://github.com/user-attachments/assets/3ff7e808-d3ea-4df4-8e0d-bf88fd545ec6)
+![Image](https://github.com/user-attachments/assets/f3886393-c9b1-4a51-8d85-81096d91e06d)
+![Image](https://github.com/user-attachments/assets/07e97bea-b3eb-4f8c-810c-895e9c7ebeea)
+![Image](https://github.com/user-attachments/assets/034eb052-d2d9-40f0-bbaf-77be56c7e85b)
